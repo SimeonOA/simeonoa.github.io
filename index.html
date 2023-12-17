@@ -60,7 +60,98 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>	
+
+          <tr onmouseout="polypod_stop()" onmouseover="polypod_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='polypod_image'>
+                  <img src='images/polypod_after.png' width="160"></div>
+                <img src='images/polypod_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function polypod_start() {
+                  document.getElementById('polypod_image').style.opacity = "1";
+                }
+
+                function polypod_stop() {
+                  document.getElementById('polypod_image').style.opacity = "0";
+                }
+                polypod_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/10260454">
+                <papertitle>PolyPoD: An Algorithm for Polyculture Seed Placement</papertitle>
+              </a>
+              <br>
+              Varun Kamat, 
+              Shrey Aeron,
+              Anrui Gu, 
+              Harshika Jalan,
+              <strong>Simeon Adebola*</strong>,
+              <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
+              <br>
+              <em>IEEE International Conference on Automation Science and Engineering (CASE)</em>, 2023 &nbsp
+              <br>
+              <!-- <a href="https://sites.google.com/berkeley.edu/systematiccomparison/home">project page</a> /
+              <a href="https://drive.google.com/file/d/1_CaE0T86ZOmDKLGbL5wMEJkvgR35OmHv/view?usp=share_link">video</a> / -->
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10260454">PDF</a>
+              <p></p>
+              <p>
+                An algorithm for seed placement in polyculture settings that works for both convex and non-convex planting areas, for various plants types and numbers.
+              </p>
+            </td>
+          </tr>		
           
+          
+          <tr onmouseout="sgc_stop()" onmouseover="sgc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" >
+                <div class="two" id='sgc_image'>
+                  <img src='images/sgc_before.png' width="160"></div>
+                <img src='images/sgc_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function sgc_start() {
+                  document.getElementById('sgc_image').style.opacity = "1";
+                }
+
+                function sgc_stop() {
+                  document.getElementById('sgc_image').style.opacity = "0";
+                }
+                sgc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/10341719">
+                <papertitle>FogROS2-SGC: A ROS2 Cloud Robotics Platform for Secure Global Connectivity</papertitle>
+              </a>
+              <br>
+              Kaiyuan Chen,
+              <a href="https://ryanhoque.github.io/">Ryan Hoque</a>,
+              <a href="https://kdharmarajan.com/">Karthik Dharmarajan</a>,
+              Edith LLontop,
+              <strong>Simeon Adebola</strong>,
+              <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>
+              John Kubiatowicz, 
+              <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2023 &nbsp  
+              <br>
+              <a href="https://sites.google.com/view/fogros2-sgc">project page</a> /
+              <a href="https://www.youtube.com/watch?v=hVVFVGLcK0c">video</a> /
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10341719">PDF</a>
+              <p></p>
+              <p>
+                A platform for connecting robot and robot components across physical locations and networks securely and globally.
+              </p>
+            </td>
+          </tr>
+          
+
+
+
+
           <tr onmouseout="systematic_stop()" onmouseover="systematic_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -96,14 +187,14 @@
               Eujen Solowjow,
               <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
               <br>
-              <em>ICRA</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Outstanding Paper(Automation) Finalist)</strong></font>  
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Outstanding Paper(Automation) Finalist)</strong></font>  
               <br>
               <a href="https://sites.google.com/berkeley.edu/systematiccomparison/home">project page</a> /
               <a href="https://drive.google.com/file/d/1_CaE0T86ZOmDKLGbL5wMEJkvgR35OmHv/view?usp=share_link">video</a> /
               <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10161497">PDF</a>
               <p></p>
               <p>
-Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day cycles. Evaluation is based on coverage, diversity, and water usage.
+                Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day cycles. Evaluation is based on coverage, diversity, and water usage.
               </p>
             </td>
           </tr>		
@@ -142,13 +233,11 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
               Edith Llontop,
               Derek Xu
               <br>
-              <em>ICRA</em>, 2023  
+              <em>International Conference on Robotics and Automation (ICRA)</em>, 2023  
               <br>
 							<a href="https://berkeleyautomation.github.io/FogROS2">project page</a> / 
 							<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10161307">PDF</a> / 
-							<!-- <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> / -->
 							<a href="https://github.com/BerkeleyAutomation/FogROS2">code</a> / 
-							<!-- <a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				 -->
               <p></p>
               <p>An easy way for roboticists using ROS 2 to take advantage of cloud platforms including AWS, Azure and GCS to run any portions of their pipeline.</p>
             </td>
@@ -157,19 +246,18 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
 			    <tr onmouseout="autoprune_stop()" onmouseover="autoprune_start()"  bgcolor="#ffffd0">
 			      <td style="padding:20px;width:25%;vertical-align:middle">
 			        <div class="one">
-			          <div class="two" id='autoprune__image'><video  width=100% height=100% muted autoplay loop>
-			          <source src="images/refnerf.mp4" type="video/mp4">
-			          Your browser does not support the video tag.
-			          </video></div>
-			          <img src='images/refnerf.jpg' width="160">
+			          <div class="two" id='autoprune_image'>
+			          <img src="images/autoprune_after.png"  width="160">
+			          </div>
+			          <img src='images/autoprune_before.png' width="160">
 			        </div>
 			        <script type="text/javascript">
 			          function autoprune_start() {
-			            document.getElementById('autoprune__image').style.opacity = "1";
+			            document.getElementById('autoprune_image').style.opacity = "1";
 			          }
 
 			          function autoprune_stop() {
-			            document.getElementById('autoprune__image').style.opacity = "0";
+			            document.getElementById('autoprune_image').style.opacity = "0";
 			          }
 			          autoprune_stop()
 			        </script>
@@ -179,7 +267,7 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
 			            <papertitle>Automated Pruning of Polyculture Plants</papertitle>
 			          </a>
 			          <br>
-			          <a href="https://scholar.harvard.edu/dorverbin/home">Mark Presten</a>,
+			          Mark Presten,
 			          <a href="https://rishiparikh.github.io/">Rishi Parikh*</a>,
                 Shrey Aeron,
                 Sandeep Mukhherjee,
@@ -189,10 +277,9 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
                 Walter Teitelbaum,
                 <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>
 			          <br>
-			    <em>CASE</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Conference Paper Award)</strong></font>
+			    <em>IEEE International Conference on Automation Science and Engineering (CASE)</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Conference Paper Award)</strong></font>
 			          <br>
-			          <a href="https://sites.google.com/berkeley.edu/pruningpolyculture/home">project page</a>
-			    /
+			          <a href="https://sites.google.com/berkeley.edu/pruningpolyculture/home">project page</a> /
                 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9926632">PDF</a> / 
                 <!-- <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> / -->
                 <a href="https://github.com/BerkeleyAutomation/AlphaGarden">code</a> / 
@@ -204,11 +291,10 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
           <tr onmouseout="madeliquid_stop()" onmouseover="madeliquid_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='madeliquid_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfw_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfw_before.jpg' width="160">
+                <div class="two" id='madeliquid_image'>
+                <image src="images/madeliquid_after.png" width="160">
+               </div>
+                <img src='images/madeliquid_before.png' width="160">
               </div>
               <script type="text/javascript">
                 function madeliquid_start() {
@@ -232,7 +318,7 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
               <a href="https://peabody.vanderbilt.edu/bio/?pid=noel-enyedy">Noel Enyedy</a>,
               <a href="http://www.joshuadanish.com/">Joshua Danish</a>
               <br>
-              <em>CSCL</em>, 2022 
+              <em>International Conference on Computer-Supported Collaborative Learning (CSCL)</em>, 2022 
               <br>
               <!-- <a href="https://nerf-w.github.io/">project page</a> / -->
               <a href="https://repository.isls.org/bitstream/1/8279/1/CSCL2022_219-225.pdf">PDF</a>
@@ -273,7 +359,7 @@ Comparing humans experts to AlphaGarden on similarly planted gardens two 60-day 
               <br>
               <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9570957">PDF</a>
               <p></p>
-              <p>AlphaGarden's seed planting algorithm can be leveraged for polyculture farming in Africa </p>
+              <p>Lessons from AlphaGarden including its seed planting algorithm can be leveraged for polyculture farming in Africa </p>
             </td>
           </tr> 
 

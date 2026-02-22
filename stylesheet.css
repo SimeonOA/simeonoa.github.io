@@ -132,7 +132,31 @@ span.highlight {
 
 .colored-box {
   color: black;
-  padding: 20px;
+  padding: 40px;
   display: inline-block;
   border-radius: 10px;
+}
+
+.video-container {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container .two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.video-container video {
+  width: 160px;
+  height: 160px;
+  object-fit: contain; /*'contain' to have fit the video, 'cover' to crop the video*/
 }

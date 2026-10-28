@@ -115,6 +115,30 @@ main {
 .home-main > section { padding-top: 28px; }
 .home-main h2 { margin-bottom: 18px; }
 
+/* ---------- Section heading with an inline "see all" link ---------- */
+
+.pub-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-bottom: 18px;
+}
+
+.pub-head h2 { margin: 0; }
+
+.see-all {
+  color: var(--link);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.see-all:hover { color: var(--link-hover); text-decoration: underline; }
+
 /* ---------- Publication filter tabs (after Marwa Abdulhai) ---------- */
 
 .pub-tabs {
